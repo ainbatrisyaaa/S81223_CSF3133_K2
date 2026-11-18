@@ -1,0 +1,234 @@
+/* ==========================================
+   General page styling (Soft Sage Green Theme)
+   ========================================== */
+- {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #384238;
+    background-color: #f4f7f4;
+}
+
+header {
+    padding: 25px;
+    color: #2c362c;
+    background-color: #d2e3d2; /* Soft sage header */
+    border-bottom: 2px solid #b8cdb8;
+}
+
+.tagline {
+    text-align: center;
+    color: #4a574a;
+}
+
+section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 22px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(184, 205, 184, 0.2);
+}
+
+h2 {
+    color: #466346;
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #638263; /* Medium sage green */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #ffffff;
+    background-color: #4f6a4f;
+}
+
+/* Menu item cards */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    flex: 1 1 250px;
+    padding: 18px;
+    border: 1px solid #d2e3d2;
+    border-radius: 8px;
+    background-color: #fafcfc; /* Pale green-tinted white */
+}
+
+.menu-item h3 {
+    color: #466346;
+}
+
+.old-price {
+    margin-right: 10px;
+    color: #828c82;
+    text-decoration: line-through;
+}
+
+.highlight {
+    color: #a3522f; /* Warm rust contrast for prices */
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+/* Video and caption */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #5c755c;
+    font-style: italic;
+}
+
+/* Feedback form */
+.feedback-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 22px;
+    border: 1px solid #d2e3d2;
+    border-radius: 8px;
+    background-color: #fafcfc;
+}
+
+.feedback-form > label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #384d38;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b8cdb8;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+fieldset {
+    margin-top: 16px;
+    border: 1px solid #d2e3d2;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 6px 12px 6px 0;
+    color: #384d38;
+}
+
+button {
+    margin-top: 18px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #638263;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4f6a4f;
+}
+
+/* Link states */
+a:link {
+    color: #2980b9;
+}
+
+a:visited {
+    color: #8e44ad;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+a:active {
+    color: #c0392b;
+}
+
+/* Keep navigation link colours readable */
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    padding: 22px;
+    text-align: center;
+    color: #2c362c;
+    background-color: #d2e3d2;
+    border-top: 2px solid #b8cdb8;
+}
+
+footer a:link,
+footer a:visited {
+    color: #2c362c;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        width: 95%;
+        padding: 16px;
+    }
+
+    .feedback-form {
+        width: 100%;
+    }
+}
