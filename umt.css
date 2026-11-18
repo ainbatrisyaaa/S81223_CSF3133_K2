@@ -1,0 +1,120 @@
+/* Global Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #F59527, #0055a5);
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #F59527, #0055a5);
+    color: white;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #F59527;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0055a5;
+    color: #ffffff;
+}
+
+/* Main Content & Section Layout */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-weight: 600;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f9fbfc;
+}
+
+tbody tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a202c;
+    color: #a0aec0;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
